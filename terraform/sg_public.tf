@@ -38,6 +38,6 @@ resource "aws_security_group" "public_ec2_SG" {
   }
 
   depends_on = [
-    aws_route_table_association.Unity2
+    aws_route_table_association.association2
   ]
 }

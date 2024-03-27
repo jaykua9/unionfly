@@ -4,6 +4,6 @@ resource "aws_eip" "eip" {
   }
   depends_on = [
 
-    aws_route_table_association.Unity1
+    aws_route_table_association.association1
   ]
 }

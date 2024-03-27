@@ -8,7 +8,7 @@ resource "aws_security_group" "rds_sg" {
     from_port       = 3306
     to_port         = 3306
     protocol        = "tcp"
-    security_groups =  ["public_ec2_SG"]
+    security_groups = ["public_ec2_SG"]
   }
   egress {
     from_port   = 0

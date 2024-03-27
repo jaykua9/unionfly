@@ -7,11 +7,11 @@ resource "aws_security_group" "private_ec2_SG" {
   vpc_id = aws_vpc.vpc.id
 
   ingress {
-    description = "SSH from public subnet"
-    from_port   = 22
-    to_port     = 22
-    protocol    = "tcp"
-    security_groups =  ["public_ec2_SG"]
+    description     = "SSH from public subnet"
+    from_port       = 22
+    to_port         = 22
+    protocol        = "tcp"
+    security_groups = ["public_ec2_SG"]
   }
 
   egress {
