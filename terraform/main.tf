@@ -7,11 +7,11 @@ provider "aws" {
   secret_key                  = "mock_secret_key"
 }
 
-# terraform {
-#   backend "s3" {
-#     bucket         = "unionfly-bucket"
-#     key            = "terraform.tfstate"
-#     region         = "us-east-1"
-#     dynamodb_table = "unionfly-dynamodb-lock"
-#   }
-# }
+ terraform {
+   backend "s3" {
+     bucket         = "unionfly-bucket"
+     key            = "terraform.tfstate"
+     region         = "us-east-1"
+     dynamodb_table = "unionfly-dynamodb-lock"
+   }
+ }
